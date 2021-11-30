@@ -1,0 +1,49 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif !important;
+  
+  
+}
+
+#root {
+  font-family: "Lato", sans-serif !important;
+
+    
+  overflow: hidden;
+}
+
+.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters {
+  padding: 0;
+}
+
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif !important;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.MuiCardMedia-img {
+  object-fit: contain !important;
+}
+.MuiButton-root {
+  border-radius: 0 !important;
+}
+.MuiButton-label {
+  font-size: 10px;
+  font-family: "Lato", sans-serif !important;
+}
