@@ -82,7 +82,7 @@ function Review(props) {
         <ListItem className={classes.listItem}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" className={classes.total}>
-            $ {subTotal}
+            {currencyData.format(subTotal)}
           </Typography>
         </ListItem>
       </List>
