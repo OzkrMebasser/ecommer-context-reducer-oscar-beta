@@ -6,7 +6,7 @@ export const products = [
     description:
       "Disfruta de un dia espectacular en el Mar Caribe navegando desde Cancun a Isla Mujeres abordo de un asombroso catamarán con barra libre y mucha diversión.",
     category: "Acuáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/islamujerescat.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/islamujerescat.jpg?alt=media&token=946f0dc5-a78a-4f81-a216-a71cec362da8",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const products = [
       "Este programa de nado con delfines está diseñado con actividades seguras para que toda la familia pueda disfrutar de su primer encuentro con estos adorables mamíferos y aprender mientras se divierten en Dolphinares, en Cancun.",
     category: "Acuáticos",
     image: 
-      "https://www.paramascota.store/wp-content/uploads/2021/12/nadando-con-delfines.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/nadando-con-delfines.jpg?alt=media&token=1a6ff848-7f39-45db-9f34-094af42c32f5",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ export const products = [
     description:
       "En esta actividad navega en lancha rápida a través del canal de manglares (la jungla de los océanos) hasta el segundo arrecife más grande del mundo. Usted maneja su propia lancha rápida durante 40 minutos hasta el segundo arrecife más grande del mundo. ",
     category: "Acuáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/lancha.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/lancha.jpg?alt=media&token=e27000a4-d895-4103-aa7d-f56af8c091c5",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const products = [
     description:
       "Sumérjase con nosotros en este fantástico mundo de maravillas submarinas, y acompáñenos a nuestro paseo de snorkel a los jardines de Palancar y Columbia Shallow, algunas de los lugares más pintorescos del Parque Nacional Marino de Cozumel.",
     category: "Acuáticos",
-    image: "https://prodiveinternational.com/wp-content/uploads/2014/05/cozumel-snorkel-e1503938258659.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/cozumel-snorkel-e1503938258659.webp?alt=media&token=d895baab-91ca-4421-94c5-769deb4fd362",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ export const products = [
     description:
       "Sumergirte en los arrecifes de coral en México para bucear es como si recorrieras una selva, sólo que vas nadando. Estos arrecifes son el hogar de 25% de las especies marinas, al visitarlas aportamos dinero para su conservación, pero recuerda tratarlas con respeto porque son animales de vital importancia para el mundo.",
     category: "Acuáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/buceo.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/buceo.jpg?alt=media&token=5830b24c-1144-43f1-90f7-e1051586cfc8",
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ export const products = [
     description:
       "Descubre los secretos de Chichen Itzá y nada en las aguas de un hermoso cenote sagrado que estaba reservado solo para la realeza maya.",
     category: "Culturales",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/ChichenItza.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/Chichen-Itza-1024x768.jpg?alt=media&token=15b8b20e-268c-479f-8476-1622161bef87",
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ export const products = [
     description:
       "Explora el sitio arqueológico más representativo de la Riviera Maya, a tan solo 60 km de Playa del Carmen. Tulum es la única ciudad maya construida en la costa con una increíble vista hacia el mar caribe y 50 construcciones mayas llenas de historia. En este recorrido descubrirás la perfecta combinación entre cultura y esplendor del Mar Caribe acompañado de un guía. También tendrás tiempo libre para tomarte todas las fotos que quieras y disfrutar de la maravillosa vista de este lugar.",
     category: "Culturales",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/tulum2.jpeg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/tulum2.jpeg?alt=media&token=c6e0f0ab-31aa-4c07-a7f6-eaf95e5a6366",
   },
   {
     id: 8,
