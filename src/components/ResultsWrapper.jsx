@@ -3,14 +3,14 @@ import { Grid, Container } from "@material-ui/core";
 import { ResultsShoppingOptions } from "./ResultsShoppingOptions";
 import { ResultsTopSection } from "./ResultsTopSection";
 import { ResultCard } from "./ResultCard";
-import { useProducts } from "../contexts/ResultsContext";
+import { useTours } from "../contexts/ResultsContext";
 import { useHistory } from "react-router-dom";
 
 export const ResultsWrapper = () => {
   const history = useHistory();
   const {
     state: { tours },
-  } = useProducts();
+  } = useTours();
 
   const showSingleProduct = (pr, e) => {
     if (

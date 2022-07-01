@@ -55,8 +55,8 @@ export const ResultCard = ({
   const classes = useStyles();
   const { dispatch, cartItems } = useCart();
 
-  const addToCart = (product) => {
-    dispatch({ type: "ADD_TO_CART", product });
+  const addToCart = (tour) => {
+    dispatch({ type: "ADD_TO_CART", tour });
   };
 
   return (

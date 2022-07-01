@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Grid, Typography, FormControl, Select } from "@material-ui/core";
-import { useProducts } from "../contexts/ResultsContext";
+import { useTours} from "../contexts/ResultsContext";
 
 export const ResultsTopSection = () => {
-  const { state, dispatch } = useProducts();
+  const { state, dispatch } = useTours();
   const [sortBy, setSortBy] = useState("");
 
   const handleChange = async (event) => {

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Grid, makeStyles, Button, Typography } from "@material-ui/core";
 import { ShoppingFilterBy } from "./ShoppingFilterBy";
 import { categories } from "../apis/categories";
-import { useProducts } from "../contexts/ResultsContext";
+import { useTours } from "../contexts/ResultsContext";
+
 
 export const useStyles = makeStyles({
   root: {
@@ -37,7 +38,7 @@ const priceRanges = [
 ];
 
 export const ResultsShoppingOptions = () => {
-  const { dispatch } = useProducts();
+  const { dispatch } = useTours();
   const [choosenPrice, setChoosenPrice] = useState(null);
   const [choosenCat, setChoosenCat] = useState(null);
 

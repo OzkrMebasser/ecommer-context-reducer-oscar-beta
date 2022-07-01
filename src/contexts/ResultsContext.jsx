@@ -99,4 +99,4 @@ export const ResultsContext = ({ children }) => {
   );
 };
 
-export const useProducts = () => useContext(ProductsContext);
+export const useTours = () => useContext(ProductsContext);
