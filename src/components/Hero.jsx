@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Navigation } from "./Navigation";
 import { Grid, Hidden } from "@material-ui/core";
 import { HeroMessage } from "./HeroMessage";
-import HeroImage from "../utils/images/toursmx.jpeg";
+// import HeroImage from "../utils/images/toursmx.jpeg";
 
 const useStyles = makeStyles({
   root: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     minHeight: "85vh",
   },
   heroImage: {
-    backgroundImage: `url(${HeroImage})`,
+    backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/couple-snorkeling-reef.jpg?alt=media&token=52e5c00d-9844-4f8b-87bf-091f4401c021)`,
     backgroundPosition: "bottom",
     backgroundSize: "cover",
     backgroundRepeat: "repeat",
@@ -54,9 +54,9 @@ export const Hero = () => {
             btntext="Mira nuestros tours"
           />
         </Grid>
-        <Hidden mdDown>
-          <Grid container item lg={6} className={classes.heroImage} />
-        </Hidden>
+        {/* <Hidden mdDown> */}
+        <Grid container item lg={6} className={classes.heroImage} />
+        {/* </Hidden> */}
       </Grid>
       
     </div>

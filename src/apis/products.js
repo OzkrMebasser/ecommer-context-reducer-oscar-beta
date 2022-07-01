@@ -70,7 +70,7 @@ export const products = [
     description:
       "Visita Cobá, majestuosa ciudad rodeada de exuberante vegetación y reconocida por poseer la edificación más alta de las zonas arqueológicas del norte de la Península de Yucatán: Nohoch Mul, estructura de 7 niveles, con 42 metros de altura (138 pies) y 120 escalones.",
     category: "Culturales",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/Coba.png",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/Coba.png?alt=media&token=bdc509e4-b61d-4c6a-8efc-6e1bae76c039",
   },
   {
     id: 9,
@@ -79,7 +79,7 @@ export const products = [
     description:
       "Visite el sitio arqueológico de Ek Balam, una antigua ciudad maya que conoció su gloria antes de Chichén Itzá. Este sitio arqueológico es una de las últimas atracciones arqueológicas mayas debido a sus trabajos de restauración más recientes.",
     category: "Culturales",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/Ek-Balam.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/Ek-Balam.jpg?alt=media&token=5779067b-f7ca-4113-aaf9-46e222bc9088",
   },
   {
     id: 10,
@@ -88,7 +88,7 @@ export const products = [
     description:
       "La Ciudad de Teotihuacan, es probablemente la ciudad prehispanica más importante de la region central de México del Periodo Clasico, una ciudad cosmopolita, ya que su identidad se vio reflejada por influencias de muchas otras culturas del mismo periodo, en ella podremos encontrar la piramide más grande construida en Mexico, La Piramide del Sol cuya altura supera los 65 metros de altura y dimensiones de 150 x 140 metros respectivamente, La Piramide de la Luna que supera los 43 metros de altura, El Templo de Quetzalcoatl, La Serpiente Emplumada y el Palacio de Quetzal Papalotl.",
     category: "Culturales",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/Ruinas-de-Teotihuacan-768x432-1.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/Ruinas-de-Teotihuacan-768x432.jpg?alt=media&token=aa16bd62-766c-4e11-9ace-f3923ec78111",
   },
   {
     id: 11,
@@ -98,7 +98,7 @@ export const products = [
     description:
       "Experimente la emoción de conducir un vehículo todoterreno por los senderos de la selva. Disfruta de agradables paseos inmersos en una zona natural protegida para explorar cuevas, volar por encima de la vegetación con tirolinas, descubrir vestigios arqueológicos, conocer el estilo de vida de los primeros habitantes y nadar en un precioso cenote de aguas cristalinas.",
     category: "Aventura",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/emotions.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/emotions.jpg?alt=media&token=0e003e3c-ea6d-41c1-96dd-3713ef9e61c5",
   },
   {
     id: 12,
@@ -108,7 +108,7 @@ export const products = [
     description:
       "Benefíciese de horarios de salida flexibles y vea lo mejor de los desiertos y playas de Cabo San Lucas con facilidad durante esta aventura en ATV, ideal para viajeros con poco tiempo. Maravíllate con los paisajes contrastantes mientras recorres cañones y montañas para llegar a la playa de Margaritas, mientras aprendes sobre la flora local con tu guía de conductor, para una experiencia que no podrías vivir solo.",
     category: "Aventura",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/ATV-CABO.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/ATV%20CABO.jpg?alt=media&token=13113eb9-ec68-4754-b0fe-8092f3202d34",
   },
   {
     id: 13,
@@ -117,7 +117,7 @@ export const products = [
     description:
       "Con un paisaje tan diverso en tierra, aire y agua, el Caribe mexicano se convierte en el patio de recreo perfecto para los buscadores de emociones que necesitan una excursión completa. Esta aventura al aire libre en Cancún-Riviera Maya ofrece precisamente eso, con rappel, todoterreno, tirolina y esnórquel a través de selvas vírgenes y un cenote (sumidero de agua dulce) en una montaña rusa ecológica. ¡Así es como se viven las vacaciones en México al máximo!",
     category: "Aventura",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/buggy-300x300.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/buggy.jpg?alt=media&token=0559def9-6815-4ddb-83f4-04befda5d576",
   },
   {
     id: 14,
@@ -127,7 +127,7 @@ export const products = [
     description:
       "Para aquellos para los que nunca es suficiente...¡Te damos acceso a todas las actividades en el Parque de Aventura extrema Selvática! El cuál incluye: Canopy Aventura Extrema, Nado en el cenote, ATV o moto 4x4 (Polaris RZR) Camino Tanzania, Monstruosas tirolesas, Sky Walk (Puentes flotantes)(lianas).",
     category: "Aventura",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/zip-line-selvatica.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/zip%20line%20selvatica.jpg?alt=media&token=9299dbfe-b813-4d21-901d-1b89bdc81133",
   },
   {
     id: 15,
@@ -136,7 +136,7 @@ export const products = [
     description:
       "SKYDIVEMEX ofrece la forma más fácil y segura de saltar en paracaidas de un avión perfectamente bueno! Después de un vuelo panorámico de 15 minutos a altitud justo por encima de Playa del Carmen, estarás listo para experimentar la adrenalina de la caída libre hasta 13,000 pies durante aproximadamente 40 segundos, ",
     category: "Aventura",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/parachute.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/parachute.jpg?alt=media&token=d47c18ab-8d49-4d73-8453-2d0d9297713b",
   },
   {
     id: 16,
@@ -146,7 +146,7 @@ export const products = [
     description:
       "Xcaret es un parque natural con más de 50 atractivos para todas las edades, perfecto para ir con toda la familia.Aquí puedes nadar en ríos subterráneos, pasear por senderos en medio de la jungla y recorrer cuevas misteriosas. Descubre nuevos colores en el Mariposario y los misterios del fondo marino en el Acuario de Arrecife de Coral. Admira de cerca venados, jaguares, flamingos y aves exóticas.En Xcaret México hay diversos atractivos para visitar, como los vestigios mayas, el Museo de Arte Popular Mexicano, una clásica hacienda henequenera y la capilla de Guadalupe.Además disfruta de la cultura mexicana con las danzas prehispánicas, la charrería y la magnífica presentación de Xcaret México Espectacular, con más de 300 artistas en escena.",
     category: "Parques temáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/xcaret.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/xcaret.jpg?alt=media&token=ebd1d704-aaf2-4c38-a278-0af6954b6c36",
   },
   {
     id: 17,
@@ -154,7 +154,7 @@ export const products = [
     price: 1500.00,
     description: "¡Visita el parque Temático más grande y emocionante de México! En Six Flags México, estamos encantados de darle la bienvenida a visitantes de todo México y una bienvenida muy especial a todos nuestros invitados internacionales. Si su familia está buscando cosas que hacer en la Ciudad de México, han venido al lugar correcto. Con increíbles atracciones, que incluyen montañas rusas y experiencias encantadoras para familias con niños pequeños, shows en vivo, opciones gastronómicas clásicas y eventos especiales como Festival del Terror y Christmas in the Park, siempre hay algo nuevo y emocionante sucediendo en el parque.",
     category: "Parques temáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/six-flags-mexico-768x767.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/six-flags-mexico.jpg?alt=media&token=c089a13a-4aa2-46c6-810b-178f06d950c5",
   },
   {
     id: 18,
@@ -162,7 +162,7 @@ export const products = [
     price: 1350.85,
     description: "El parque es ideal para fiestas de cumpleaños, visitas escolares y actividades corporativas de Teambuilding, estamos ubicados en el Ajusco, al sur de Ciudad de México. Contamos con un equipo de expertos en fiestas ... Ven a pasar un día lleno de acción militar con Fun Army Park.",
     category: "Parques temáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/funarmy.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/funarmy.jpg?alt=media&token=113bec50-cba4-433a-a4fd-d1cf690460c1",
   },
   {
     id: 19,
@@ -170,7 +170,7 @@ export const products = [
     price: 500,
     description: "El Parque Explora es un parque ecológico que alberga las instalaciones del Centro de Ciencias Explora, de la Sala IMAX® 3Dy del Foro del Lago.Este último es un fabuloso escenario al aire libre en donde 2,100 personas pueden disfrutar, cómodamente instaladas, de espectáculos y manifestaciones artísticas del más alto nivel que se presentan principalmente durante la representación anual de la Feria Estatal de León.",
     category: "Parques temáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/parqueexplora-768x768.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/parqueexplora.jpg?alt=media&token=0649485c-cf13-413c-b834-f5793f2dc2fa",
   },
   {
     id: 20,
@@ -178,6 +178,6 @@ export const products = [
     price: 1150.00,
     description: "El Concepto KidZania, Es una de las marcas de eduentretenimiento interactivo infantil de mayor crecimiento en el mundo. Es una ciudad interactiva que combina inspiración, diversión y aprendizaje a través del juego de rol más realista, donde los niños de 4 a 16 años pueden explorar libremente una ciudad infantil a escala, con una superficie de más de 7,000 metros cuadrados y con más de 70 actividades que pueden disfrutar.",
     category: "Parques temáticos",
-    image: "https://www.paramascota.store/wp-content/uploads/2021/12/kidzania-768x768.jpg",
+    image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/kidzania.jpg?alt=media&token=aa06e915-58f0-4450-8624-3dd00712f3cb",
   },
 ];

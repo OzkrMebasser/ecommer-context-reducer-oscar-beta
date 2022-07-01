@@ -18,7 +18,9 @@ const useStyles = makeStyles({
   },
   subMsg: {
     marginBottom: "1rem",
-    color: '#04009A'
+    color: '#04009A',
+    fontSize: "3.5rem",
+    fontWeight: "bold",
     
   },
 });
@@ -63,7 +65,7 @@ export const HeroMessage = ({ maintext, subtext, btntext }) => {
           </Typography>
         </animated.div>
         <animated.div style={animateSubText}>
-          <Typography variant="body2">{subtext}</Typography>
+          <Typography variant="h5">{subtext}</Typography>
         </animated.div>
         <animated.div style={fadeBtn}>
           <Button
