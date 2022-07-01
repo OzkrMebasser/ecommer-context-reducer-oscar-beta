@@ -111,17 +111,17 @@ export const Navigation = () => {
           
             <Grid item>               
             <Link to="/" underline="hover" color="inherit">
-                <Button color="secondary" size="large" variant="contained" >
+                <Button color="secondary" size="medium" variant="contained" >
                   INICIO
                 </Button>
               </Link>
               <Link to="/products">
-                <Button color="secondary" size="large" variant="contained">
+                <Button color="secondary" size="medium" variant="contained">
                   TOURS
                 </Button>
               </Link>
               <Link to="/products">
-                <Button color="secondary" size="large" variant="contained">
+                <Button color="secondary" size="medium" variant="contained">
                   NOSOTROS
                 </Button>
               </Link>
