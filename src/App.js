@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Homepage } from "./pages/Homepage";
-import { Productspage } from "./pages/Productspage";
+import { Tourspage } from "./pages/Tourspage";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
-import { SingleProductPage } from "./pages/SingleProductPage";
+import { SingleTourPage } from "./pages/SingleTourPage";
 import { Favoritespage } from "./pages/Favoritespage";
 import  Login  from "./pages/Login";
 import Checkout from "./pages/Checkout";
@@ -32,13 +32,13 @@ function App() {
     <ThemeProvider theme={outerTheme}>
       <Router>
         <Route path="/" component={Homepage} exact />
-        <Route path="/products" component={Productspage} exact />
+        <Route path="/tours" component={Tourspage} exact />
         <Route
-          path="/products/product/:id"
-          component={SingleProductPage}
+          path="/tours/tour/:id"
+          component={SingleTourPage}
           exact
         />
-        <Route path="/favourite products" component={Favoritespage} exact />
+        <Route path="/favourite tours" component={Favoritespage} exact />
         <Route path="/login" component={Login} exact />
         <Route path="/payment" component={Checkout} exact />
 

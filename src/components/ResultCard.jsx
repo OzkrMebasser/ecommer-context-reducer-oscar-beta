@@ -43,13 +43,13 @@ const useStyles = makeStyles({
 });
 
 export const ResultCard = ({
-  productcat,
-  productimg,
-  producttitle,
-  productprice,
-  productid,
+  tourcat,
+  tourimg,
+  tourtitle,
+  tourprice,
+  tourid,
   onClick,
-  product,
+  tour,
   children,
 }) => {
   const classes = useStyles();
@@ -66,18 +66,18 @@ export const ResultCard = ({
           className={classes.cardMedia}
           component="img"
           alt="Los mejores tours de México"
-          image={productimg}
+          image={tourimg}
           title="Los mejores tours de México"
         />
         <CardContent>
           <Typography gutterBottom variant="h5">
-            {producttitle}
+            {tourtitle}
           </Typography>
           <Typography gutterBottom variant="body2">
-            Categoria: {productcat}
+            Categoria: {tourcat}
           </Typography>
           <Typography variant="h6" color="textSecondary">
-           Precio:  ${productprice}
+           Precio:  ${tourprice}
           </Typography>
         
         </CardContent>
@@ -87,10 +87,10 @@ export const ResultCard = ({
           size="large"
           color="primary"
           variant="contained"
-          onClick={() => addToCart(product)}
-          disabled={checkIfInCart(cartItems, productid) ? true : false}
+          onClick={() => addToCart(tour)}
+          disabled={checkIfInCart(cartItems, tourid) ? true : false}
         >
-          {checkIfInCart(cartItems, productid) ? "EN CARRITO" : "AGREGAR AL CARRITO"}
+          {checkIfInCart(cartItems, tourid) ? "EN CARRITO" : "AGREGAR AL CARRITO"}
         </Button>
         {children}
       </CardActions>

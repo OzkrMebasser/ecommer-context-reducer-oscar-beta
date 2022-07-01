@@ -69,14 +69,14 @@ function Review(props) {
         </ListItem>
       </List> */}
       <List disablePadding>
-        {cartItems.map(product => (
+        {cartItems.map(tour => (
            
-          <ListItem className={classes.listItem} key={product.title} > 
+          <ListItem className={classes.listItem} key={tour.title} > 
             
-            <ListItemText primary={product.title} secondary={`Total de Tours (${product.quantity}) - Categoria: ${product.category}  `}/>
-            <ListItemText secondary={`Precio unitario  ${currencyData.format(product.price)}`} />
+            <ListItemText primary={tour.title} secondary={`Total de Tours (${tour.quantity}) - Categoria: ${tour.category}  `}/>
+            <ListItemText secondary={`Precio unitario  ${currencyData.format(tour.price)}`} />
 
-            <Typography variant="body2">Total {currencyData.format(product.price*product.quantity)}</Typography>
+            <Typography variant="body2">Total {currencyData.format(tour.price*tour.quantity)}</Typography>
           </ListItem>
         ))}
         <ListItem className={classes.listItem}>

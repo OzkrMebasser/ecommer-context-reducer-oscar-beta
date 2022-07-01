@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Navigation } from "./Navigation";
-import { Grid, Hidden } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { HeroMessage } from "./HeroMessage";
 // import HeroImage from "../utils/images/toursmx.jpeg";
 
@@ -20,9 +20,9 @@ const useStyles = makeStyles({
   },
   heroImage: {
     backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/couple-snorkeling-reef.jpg?alt=media&token=52e5c00d-9844-4f8b-87bf-091f4401c021)`,
-    backgroundPosition: "bottom",
+    backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundRepeat: "repeat",
+    // backgroundRepeat: "repeat",
     backgroundColor: "#fff",
     transition: "0.3s",
     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
@@ -39,7 +39,7 @@ export const Hero = () => {
     <div className={classes.root}>
       <Navigation />
       <Grid container className={classes.fullHeight}>
-
+      <Grid container item lg={6} className={classes.heroImage} />
         <Grid
           container
           alignItems="center"
@@ -53,9 +53,10 @@ export const Hero = () => {
             subtext="Tenemos las actividades mas populares"
             btntext="Mira nuestros tours"
           />
+          
         </Grid>
         {/* <Hidden mdDown> */}
-        <Grid container item lg={6} className={classes.heroImage} />
+        
         {/* </Hidden> */}
       </Grid>
       

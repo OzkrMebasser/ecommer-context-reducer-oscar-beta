@@ -4,20 +4,20 @@ import { ResultCard } from "./ResultCard";
 import { useHistory } from "react-router-dom";
 import { marginer } from "../actions/marginer";
 import { ImHeartBroken } from "react-icons/im";
-import { useFavoriteProducts } from "../contexts/FavoritesContext";
+import { useFavoriteTours } from "../contexts/FavoritesContext";
 
-export const FavoriteProducts = () => {
+export const FavoriteTours = () => {
   const history = useHistory();
-  const { dispatchFavs, favprods } = useFavoriteProducts();
+  const { dispatchFavs, favprods } = useFavoriteTours();
 
-  const showSingleProduct = (pr, e) => {
+  const showSingleTour = (pr, e) => {
     if (
       e.target.classList.contains("MuiCardMedia-root") ||
       (e.target.classList.contains("MuiTypography-root") &&
         !e.target.classList.contains("MuiCardActions-root"))
     ) {
       history.push({
-        pathname: `/products/product/${pr.title}`,
+        pathname: `/tours/tour/${pr.title}`,
         state: {
           pr,
         },
@@ -34,13 +34,13 @@ export const FavoriteProducts = () => {
             return (
               <Grid item xs={12} md={6} lg={4} key={id}>
                 <ResultCard
-                  onClick={(e) => showSingleProduct(pr, e)}
+                  onClick={(e) => showSingleTour(pr, e)}
                   key={id}
-                  productid={id}
-                  productimg={image}
-                  producttitle={title}
-                  productprice={price.toFixed(2)}
-                  product={pr}
+                  tourid={id}
+                  tourimg={image}
+                  tourtitle={title}
+                  tourprice={price.toFixed(2)}
+                  tour={pr}
                 >
                   <IconButton
                     onClick={() =>

@@ -11,7 +11,7 @@ export const useStyles = makeStyles({
     paddingBottom: "0.8rem",
     cursor: "pointer",
   },
-  productImage: {
+  tourImage: {
     backgroundPosition: "center",
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
@@ -21,9 +21,9 @@ export const useStyles = makeStyles({
 export const CartProduct = ({
   backgroundimg,
   quantity,
-  producttitle,
-  productprice,
-  productid,
+  tourtitle,
+  tourprice,
+  tourid,
 }) => {
   const classes = useStyles();
 
@@ -33,24 +33,24 @@ export const CartProduct = ({
       <Grid
         item
         xs={3}
-        className={classes.productImage}
+        className={classes.tourImage}
         style={{ backgroundImage: `url(${backgroundimg})` }}
       />
       <Grid container direction="column" item xs={8}>
-        <Typography variant="body1">{producttitle}</Typography>
-        <Typography variant="subtitle2">{productprice}</Typography>
+        <Typography variant="body1">{tourtitle}</Typography>
+        <Typography variant="subtitle2">{tourprice}</Typography>
         <Grid container item justifyContent="space-between" alignItems="center">
           <Grid container item xs>
             <Typography variant="body2">
               Cantidad:
               <IconButton
-                onClick={() => dispatch({ type: "INCREMENT", productid })}
+                onClick={() => dispatch({ type: "INCREMENT", tourid })}
               >
                 <IoIosAdd />
               </IconButton>
               {quantity}
               <IconButton
-                onClick={() => dispatch({ type: "DECREMENT", productid })}
+                onClick={() => dispatch({ type: "DECREMENT", tourid })}
               >
                 <IoIosRemove />
               </IconButton>
@@ -58,7 +58,7 @@ export const CartProduct = ({
           </Grid>
           <Grid container item xs={2} justifyContent="flex-end">
             <IconButton
-              onClick={() => dispatch({ type: "REMOVE_FROM_CART", productid })}
+              onClick={() => dispatch({ type: "REMOVE_FROM_CART", tourid })}
             >
               <AiFillDelete />
             </IconButton>

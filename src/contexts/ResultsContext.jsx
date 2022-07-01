@@ -1,11 +1,11 @@
 import React, { useReducer, createContext, useContext } from "react";
-import { products } from "../apis/products";
+import { tours } from "../apis/tours";
 // import { isEmpty } from "../actions/objectIsEmpty";
 
 export const ProductsContext = createContext();
 
 let initialState = {
-  products: products,
+  tours: tours,
   category: "",
   price: "",
 };
@@ -15,29 +15,29 @@ const reducer = (state, action) => {
     case "PRICE_LOW_HIGH":
       return {
         ...state,
-        products: state.products.sort((a, b) => a.price - b.price),
+        tours: state.tours.sort((a, b) => a.price - b.price),
       };
     case "PRICE_HIGH_LOW":
       return {
         ...state,
-        products: state.products.sort((a, b) => b.price - a.price),
+        tours: state.tours.sort((a, b) => b.price - a.price),
       };
     case "NAME":
       return {
         ...state,
-        products: state.products.sort((a, b) => a.title.localeCompare(b.title)),
+        tours: state.tours.sort((a, b) => a.title.localeCompare(b.title)),
       };
       case "FILTER_BY_CATEGORY":
       return {
         ...state,
-        products: state.products.sort((a, b) => a.category.localeCompare(b.category)),
+        tours: state.tours.sort((a, b) => a.category.localeCompare(b.category)),
       };
     case "FILTER_BY_PRICE":
       if (!state.category) {
         return {
           ...state,
           price: { ...action.prices },
-          products: products.filter((a) => {
+          tours: tours.filter((a) => {
             return (
               !(a.price < parseInt(action.prices.a)) &&
               !(a.price > parseInt(action.prices.b))
@@ -49,7 +49,7 @@ const reducer = (state, action) => {
         return {
           ...state,
           price: { ...action.prices },
-          products: products.filter((a) => {
+          tours: tours.filter((a) => {
             return (
               !(a.price < parseInt(action.prices.a)) &&
               !(a.price > parseInt(action.prices.b)) &&
@@ -83,7 +83,7 @@ const reducer = (state, action) => {
     //   }
     //   break;
     case "CLEAR_FILTERS":
-      return { ...state, products, price: "", category: "" };
+      return { ...state, tours, price: "", category: "" };
     default:
       throw new Error();
   }

@@ -69,7 +69,7 @@ export const HeroMessage = ({ maintext, subtext, btntext }) => {
         </animated.div>
         <animated.div style={fadeBtn}>
           <Button
-            onClick={() => history.push("/products")}
+            onClick={() => history.push("/tours")}
             className={classes.buttonStyles}
             variant="contained"
             color="secondary"

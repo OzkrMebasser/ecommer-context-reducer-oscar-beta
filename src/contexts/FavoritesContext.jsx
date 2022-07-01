@@ -7,9 +7,9 @@ let initialState = [];
 const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_FAVORITES":
-      const ifExists = state.find((el) => el.id === action.product.id);
+      const ifExists = state.find((el) => el.id === action.tour.id);
       if (!ifExists) {
-        return [...state, action.product];
+        return [...state, action.tour];
       } else {
         return [...state];
       }
@@ -40,4 +40,4 @@ export const FavoritesContext = ({ children }) => {
   );
 };
 
-export const useFavoriteProducts = () => useContext(FavoriteItemsContext);
+export const useFavoriteTours = () => useContext(FavoriteItemsContext);

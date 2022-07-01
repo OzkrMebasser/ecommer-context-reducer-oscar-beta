@@ -4,7 +4,7 @@ import { ResultsHeader } from "../components/ResultsHeader";
 import { ResultsWrapper } from "../components/ResultsWrapper";
 import { Footer } from "../components/Footer";
 
-export const Productspage = () => {
+export const Tourspage = () => {
   return (
     <>
       <Navigation />
@@ -15,4 +15,4 @@ export const Productspage = () => {
     </>
   );
 };
-export default Productspage;
+export default Tourspage;

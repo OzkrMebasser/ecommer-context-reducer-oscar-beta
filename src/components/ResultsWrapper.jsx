@@ -9,7 +9,7 @@ import { useHistory } from "react-router-dom";
 export const ResultsWrapper = () => {
   const history = useHistory();
   const {
-    state: { products },
+    state: { tours },
   } = useProducts();
 
   const showSingleProduct = (pr, e) => {
@@ -19,7 +19,7 @@ export const ResultsWrapper = () => {
         !e.target.classList.contains("MuiCardActions-root"))
     ) {
       history.push({
-        pathname: `/products/product/${pr.title}`,
+        pathname: `/tours/tour/${pr.title}`,
         state: {
           pr,
         },
@@ -33,20 +33,20 @@ export const ResultsWrapper = () => {
         <ResultsShoppingOptions />
         <ResultsTopSection />
         <Grid container spacing={3} style={{ marginTop: "1rem" }}>
-          {products.length !== 0
-            ? products.map((pr, i) => {
+          {tours.length !== 0
+            ? tours.map((pr, i) => {
                 const { title, image, id, price, category } = pr;
                 return (
                   <Grid item xs={12} md={6} lg={4} key={id}>
                     <ResultCard
                       onClick={(e) => showSingleProduct(pr, e)}
                       key={id}
-                      productid={id}
-                      productimg={image}
-                      producttitle={title}
-                      productprice={price.toFixed(2)}
-                      product={pr}
-                      productcat={category}
+                      tourid={id}
+                      tourimg={image}
+                      tourtitle={title}
+                      tourprice={price.toFixed(2)}
+                      tour={pr}
+                      tourcat={category}
                     />
                   </Grid>
                 );

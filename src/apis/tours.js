@@ -1,4 +1,4 @@
-export const products = [
+export const tours = [
   {
     id: 1,
     title: "Isla Mujeres en Catamaran",

@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  
   Container,
   Grid,
   Typography,
@@ -7,14 +8,17 @@ import {
   makeStyles,
   CardMedia,
   IconButton,
+
 } from "@material-ui/core";
+
 import { useCart } from "../contexts/CartContext";
 import { checkIfInCart } from "../actions/checkIfInCart";
 import { CgArrowLongLeft } from "react-icons/cg";
 import { useHistory } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
 import { marginer } from "../actions/marginer";
-import { useFavoriteProducts } from "../contexts/FavoritesContext";
+import { useFavoriteTours } from "../contexts/FavoritesContext";
+
 
 const useStyles = makeStyles({
   root: {
@@ -24,10 +28,10 @@ const useStyles = makeStyles({
   inStock: {
     marginBottom: "4rem",
   },
-  productDescription: {
+  tourDescription: {
     marginBottom: "2rem",
   },
-  productImage: {
+  tourImage: {
     width: "100%",
     height: "100%",
     backgroundSize: "contain",
@@ -42,37 +46,38 @@ const useStyles = makeStyles({
   },
 });
 
-export const SingleProduct = ({
-  product,
-  productimg,
-  productdesc,
-  producttitle,
-  productprice,
+export const SingleTour = ({
+  tour,
+  tourimg,
+  tourdesc,
+  tourtitle,
+  tourprice,
 }) => {
   const classes = useStyles();
   const { dispatch, cartItems } = useCart();
-  const { dispatchFavs } = useFavoriteProducts();
+  const { dispatchFavs } = useFavoriteTours();
 
   const history = useHistory();
-  const addToCart = (product) => {
-    dispatch({ type: "ADD_TO_CART", product });
+  const addToCart = (tour) => {
+    dispatch({ type: "ADD_TO_CART", tour });
   };
 
-  const addToFavs = (product) => {
+  const addToFavs = (tour) => {
     dispatchFavs({
       type: "ADD_TO_FAVORITES",
-      product,
+      tour,
     });
   };
+
   return (
     <Container className={classes.root}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <CardMedia className={classes.productImage} image={productimg} />
+          <CardMedia className={classes.tourImage} image={tourimg} />
         </Grid>
         <Grid container item xs={12} md={6} direction="column">
           <Grid item>
-            <Typography variant="h4">{producttitle}</Typography>
+            <Typography variant="h4">{tourtitle}</Typography>
 
             <Typography
               variant="caption"
@@ -83,23 +88,26 @@ export const SingleProduct = ({
               In Stock
             </Typography>
           </Grid>
-          <Typography variant="body2" className={classes.productDescription}>
-            {productdesc}
+          <Typography variant="body2" className={classes.tourDescription}>
+            {tourdesc}
           </Typography>
 
           <Typography variant="subtitle2" className={classes.price}>
-           Precio:  ${productprice.toFixed(2)}
+            Precio: ${tourprice.toFixed(2)}
           </Typography>
 
           <Button
             variant="contained"
             color="primary"
-            onClick={() => addToCart(product)}
-            disabled={checkIfInCart(cartItems, product.id) ? true : false}
+            onClick={() => addToCart(tour)}
+            disabled={checkIfInCart(cartItems, tour.id) ? true : false}
           >
-            {checkIfInCart(cartItems, product.id) ? "EN CARRITO" : "AGREGAR AL CARRITO"}
+            {checkIfInCart(cartItems, tour.id)
+              ? "EN CARRITO"
+              : "AGREGAR AL CARRITO"}
           </Button>
-
+          
+    
           <Grid
             item
             container
@@ -114,9 +122,15 @@ export const SingleProduct = ({
             >
               <CgArrowLongLeft />
             </IconButton>
-            <IconButton onClick={() => addToFavs(product)}>
+            <IconButton onClick={() => addToFavs(tour)}>
+            
               <AiFillHeart />
             </IconButton>
+            {/* <Rating
+            value={3}
+            max={5}
+            onChange={(value) => console.log(`Rated with value ${value}`)}
+          /> */}
           </Grid>
         </Grid>
       </Grid>

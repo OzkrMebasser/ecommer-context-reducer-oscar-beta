@@ -30,28 +30,29 @@ export const Cart = () => {
   const { cartItems, subTotal } = useCart();
   const b = cartItems.length === 0 ? false : true;
 
+  // eslint-disable-next-line default-case
   switch (b) {
      case true:
       
       return (
         <Container className={classes.root}>
           <CartHeading totalprice={subTotal} itemsquantity={cartItems.length} />
-          {cartItems.map((product, i) => {
-            const { id, image, price, title, quantity, category } = product;
+          {cartItems.map((tour, i) => {
+            const { id, image, price, title, quantity, category } = tour;
             return (
               <CartProduct
                 key={id}
-                productid={id}
+                tourid={id}
                 quantity={quantity}
-                productprice={`$${price}`}
-                producttitle={title}
+                tourprice={`$${price}`}
+                tourtitle={title}
                 backgroundimg={image}
-                productcat={category}
+                tourcat={category}
               />
             );
           })}
           {cartItems && cartItems.length ? (
-           <Link to="/products" > <Button
+           <Link to="/favourite tours" > <Button
               size="large"
               color="primary"
               variant="contained"

@@ -23,7 +23,7 @@ import { TemporaryDrawer } from "./TemporaryDrawer";
 import { MdExpandMore } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { useCart } from "../contexts/CartContext";
-import { useFavoriteProducts } from "../contexts/FavoritesContext";
+import { useFavoriteTours } from "../contexts/FavoritesContext";
 import LOGO from '../utils/images/tuttytour.png'
 
 const useStyles = makeStyles((theme) => ({
@@ -58,7 +58,7 @@ export const Navigation = () => {
   const [open, setOpen] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
   const { cartItems } = useCart();
-  const { favprods } = useFavoriteProducts();
+  const { favprods } = useFavoriteTours();
 
   const handleDrawer = () => {
     setOpenDrawer(!openDrawer);
@@ -115,12 +115,12 @@ export const Navigation = () => {
                   INICIO
                 </Button>
               </Link>
-              <Link to="/products">
+              <Link to="/tours">
                 <Button color="secondary" size="medium" variant="contained">
                   TOURS
                 </Button>
               </Link>
-              <Link to="/products">
+              <Link to="/tours">
                 <Button color="secondary" size="medium" variant="contained">
                   NOSOTROS
                 </Button>
@@ -131,7 +131,7 @@ export const Navigation = () => {
                   <FaShoppingCart size={20} color="primary" />
                 </Badge>
               </IconButton>
-              <Link to="/favourite products">
+              <Link to="/favourite tours">
                 <IconButton>
                   <Badge badgeContent={favprods.length} color="primary">
                     <MdFavorite size={20} color="primary" />
