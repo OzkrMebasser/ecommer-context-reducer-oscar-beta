@@ -12,7 +12,7 @@ import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   buttonStyles: {
-    marginTop: "1rem",
+    marginBottom: "10rem",
     
 
   },
@@ -57,10 +57,10 @@ export const HeroMessage = ({ maintext, subtext, btntext }) => {
   });
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <Box>
         <animated.div style={animateMainText}>
-          <Typography variant="h2" className={classes.subMsg}>
+          <Typography variant="h1" className={classes.subMsg}>
             {maintext}
           </Typography>
         </animated.div>

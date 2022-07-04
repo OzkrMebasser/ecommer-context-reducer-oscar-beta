@@ -22,12 +22,11 @@ const useStyles = makeStyles({
     backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/couple-snorkeling-reef.jpg?alt=media&token=52e5c00d-9844-4f8b-87bf-091f4401c021)`,
     backgroundPosition: "center",
     backgroundSize: "cover",
+    height: "85vh",
     // backgroundRepeat: "repeat",
     backgroundColor: "#fff",
     transition: "0.3s",
     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
-
-    
     
   },
   
@@ -39,16 +38,20 @@ export const Hero = () => {
     <div className={classes.root}>
       <Navigation />
       <Grid container className={classes.fullHeight}>
-      <Grid container item lg={6} className={classes.heroImage} />
-        <Grid
+      <Grid container item lg={6} className={classes.heroImage} 
+      />
+      
+      <Grid
           container
           alignItems="center"
           justifyContent="center"
           item
           md={12}
           lg={6}
+       
         >
           <HeroMessage 
+            className={classes.mb}
             maintext="¡Disfruta de una aventura fuera de serie!"
             subtext="Tenemos las actividades mas populares"
             btntext="Mira nuestros tours"
